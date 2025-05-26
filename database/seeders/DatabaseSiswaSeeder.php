@@ -51,7 +51,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Makmal',
             'kelas' => 'XII PPLG',
             'tipe' => 'unggulan',
-            'password' => Hash::make('123')
+            'password' => Hash::make('123456789')
         ]);
 
           Siswa::Create([
