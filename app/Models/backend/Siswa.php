@@ -11,6 +11,7 @@ class Siswa extends Authenticatable
     use Notifiable;
 
     protected $table = 'siswa';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'id',

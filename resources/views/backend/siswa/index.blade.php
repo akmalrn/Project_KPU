@@ -48,7 +48,7 @@
                                                 <td>{{ $s->nama }}</td>
                                                 <td>{{ $s->kelas }}</td>
                                                 <td>
-                                                    @if ($s->tipe == 'Unggulan')
+                                                    @if ($s->tipe == 'unggulan')
                                                         <span class="badge badge-success">Unggulan</span>
                                                     @else
                                                         <span class="badge badge-secondary">Reguler</span>

@@ -40,3 +40,8 @@ Route::post('/login-siswa', [App\Http\Controllers\Frontend\AuthController::class
 Route::middleware('auth:siswa')->group(function () {
     Route::get('/dashboard-siswa', [App\Http\Controllers\Frontend\SiswaDashboardController::class, 'index'])->name('siswa.dashboard');
 });
+
+
+
+Route::get('/dashboard-siswa/download-pdf', [App\Http\Controllers\Frontend\SiswaDashboardController::class, 'downloadPdf'])->name('siswa.download.pdf');
+Route::post('/logout-siswa', [App\Http\Controllers\Frontend\AuthController::class, 'logout'])->name('logout.siswa');

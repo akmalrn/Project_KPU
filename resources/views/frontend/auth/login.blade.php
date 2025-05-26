@@ -57,6 +57,11 @@
   </div>
   <div class="d-grid gap-2">
     <button type="submit" class="btn btn-primary">Login</button>
+    @if($errors->any())
+    <div class="alert alert-danger">
+        {{ $errors->first() }}
+    </div>
+@endif
   </div>
 </form>
 
