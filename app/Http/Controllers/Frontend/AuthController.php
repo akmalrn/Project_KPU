@@ -16,7 +16,7 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'id' => 'required|integer|exists:users,id',
+            'id' => 'required|integer|exists:siswa,id',
             'password' => 'required|string|min:6',
         ]);
 
@@ -26,4 +26,9 @@ class AuthController extends Controller
 
         return back()->withErrors(['id' => 'Id atau password salah.']);
     }
+public function logout()
+{
+    Auth::guard('siswa')->logout();
+    return redirect()->route('halaman.login'); 
+}
 }

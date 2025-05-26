@@ -8,7 +8,7 @@
     <link href="{{ asset('bootstrap.min.css') }}" rel="stylesheet">
     <link rel="icon" type="image/png" href="{{ asset('assets/images/wikrama/favicon-96x96.png') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-
+   <link rel="shortcut icon" href="{{ asset('assets/images/wikrama.png') }}" type="image/x-icon">
     <style>
         body {
             background: linear-gradient(to right, #4e54c8, #8f94fb);

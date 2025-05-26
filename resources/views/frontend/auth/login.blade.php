@@ -50,25 +50,23 @@
 
 <body>
 
-    <div class="login-container">
-        <div class="login-card">
-            <h3 class="text-center mb-4">Login</h3>
-            <form action="{{ route('login.siswa') }}" method="POST">
-                @csrf
-                <div class="mb-3">
-                    <label for="id" class="form-label">NIS</label>
-                    <input type="number" class="form-control" id="id" name="id" placeholder="Enter Nis"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password"
-                        required autocomplete="new-password">
-                </div>
-                <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </div>
-            </form>
+  <div class="login-container">
+    <div class="login-card">
+      <h3 class="text-center mb-4">Login</h3>
+<form action="{{ route('login.siswa') }}" method="POST">
+  @csrf
+  <div class="mb-3">
+    <label for="id" class="form-label">NIS</label>
+    <input type="number" class="form-control" id="id" name="id" placeholder="Enter Nis" required>
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required autocomplete="new-password">
+  </div>
+  <div class="d-grid gap-2">
+    <button type="submit" class="btn btn-primary">Login</button>
+  </div>
+</form>
 
         </div>
     </div>

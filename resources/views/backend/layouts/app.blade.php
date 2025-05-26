@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/wikrama/favicon.ico') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/wikrama/apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('assets/images/wikrama/site.webmanifest') }}">
+       <link rel="shortcut icon" href="{{ asset('assets/images/wikrama.png') }}" type="image/x-icon">
     <!-- animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
