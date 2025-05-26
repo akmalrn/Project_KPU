@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/gate-admin', [App\Http\Controllers\Backend\AuthController::class, 'halamanLogin'])->name('halaman.login.admin');
 Route::post('/login-admin', [App\Http\Controllers\Backend\AuthController::class, 'login'])->name('login.admin');
-Route::get('/logout-admin', [App\Http\Controllers\Backend\AuthController::class, 'logout'])->name('logout');
+Route::post('/logout-admin', [App\Http\Controllers\Backend\AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard-admin', [App\Http\Controllers\Backend\AdminController::class, 'index'])->name('dashboard.admin');

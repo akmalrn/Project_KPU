@@ -89,8 +89,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-=======
 
     {{-- Tooltip init & animasi tambahan --}}
     @push('scripts')
@@ -118,5 +116,4 @@
             }
         </script>
     @endpush
->>>>>>> f4c0e7fbbbddb02ac3be01ef192f0dd2255ef847
 @endsection
