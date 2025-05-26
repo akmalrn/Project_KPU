@@ -19,7 +19,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Sandy TWS',
             'kelas' => 'XII TJKT',
             'tipe' => 'reguler',
-            'password' => Hash::make('123')
+            'password' => Hash::make('1234567890')
         ]);
 
         Siswa::Create([
@@ -27,7 +27,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Rizen',
             'kelas' => 'XII PPLG',
             'tipe' => 'reguler',
-            'password' => Hash::make('123')
+            'password' => Hash::make('1234567890')
         ]);
 
         Siswa::Create([
@@ -35,7 +35,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Putih Bolos',
             'kelas' => 'XII TJKT',
             'tipe' => 'reguler',
-            'password' => Hash::make('123')
+            'password' => Hash::make('1234567890')
         ]);
 
           Siswa::Create([
@@ -43,7 +43,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Akmal RN',
             'kelas' => 'XII PPLG',
             'tipe' => 'unggulan',
-            'password' => Hash::make('123')
+            'password' => Hash::make('1234567890')
         ]);
 
           Siswa::Create([
@@ -51,7 +51,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Makmal',
             'kelas' => 'XII PPLG',
             'tipe' => 'unggulan',
-            'password' => Hash::make('123456789')
+            'password' => Hash::make('1234567890')
         ]);
 
           Siswa::Create([
@@ -59,7 +59,7 @@ class DatabaseSiswaSeeder extends Seeder
             'nama' => 'Amri',
             'kelas' => 'XII PPLG',
             'tipe' => 'unggulan',
-            'password' => Hash::make('123')
+            'password' => Hash::make('1234567890')
         ]);
     }
 }

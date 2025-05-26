@@ -32,6 +32,6 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('logout');
+        return redirect('/gate-admin')->with('success', 'Anda telah berhasil logout.');
     }
 }

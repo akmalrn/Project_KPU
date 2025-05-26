@@ -1,0 +1,308 @@
+:root {
+    --wikrama-blue: #1e3a8a;
+    --wikrama-blue-dark: #1e40af;
+    --wikrama-blue-light: #3b82f6;
+    --wikrama-gold: #f59e0b;
+    --wikrama-gold-dark: #d97706;
+    --wikrama-white: #ffffff;
+    --wikrama-gray: #6b7280;
+    --wikrama-gray-light: #f3f4f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--wikrama-blue) 0%, var(--wikrama-blue-dark) 100%);
+    min-height: 100vh;
+}
+
+.login-container {
+    min-height: 100vh;
+}
+
+/* Left Side Styling */
+.left-side {
+    background: linear-gradient(135deg, var(--wikrama-blue) 0%, var(--wikrama-blue-dark) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.left-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.logo-container {
+    position: relative;
+    z-index: 2;
+}
+
+.logo-circle {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--wikrama-gold) 0%, var(--wikrama-gold-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+.logo-circle i {
+    font-size: 3rem;
+    color: var(--wikrama-white);
+}
+
+.logo-circle-small {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--wikrama-gold) 0%, var(--wikrama-gold-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-circle-small i {
+    font-size: 2rem;
+    color: var(--wikrama-white);
+}
+
+@keyframes logoFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.features {
+    text-align: left;
+}
+
+.feature-item {
+    color: var(--wikrama-white);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.feature-item i {
+    color: var(--wikrama-gold);
+}
+
+/* Right Side Styling */
+.right-side {
+    background: var(--wikrama-white);
+    position: relative;
+}
+
+.login-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text-wikrama-blue {
+    color: var(--wikrama-blue) !important;
+}
+
+.text-wikrama-gold {
+    color: var(--wikrama-gold) !important;
+}
+
+/* Form Styling */
+.form-label {
+    color: var(--wikrama-blue);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--wikrama-blue);
+    box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.25);
+}
+
+.input-group-text {
+    background: var(--wikrama-gray-light);
+    border: 2px solid #e5e7eb;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    color: var(--wikrama-gray);
+}
+
+.input-group .form-control {
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.input-group .btn {
+    border: 2px solid #e5e7eb;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Button Styling */
+.btn-wikrama {
+    background: linear-gradient(135deg, var(--wikrama-blue) 0%, var(--wikrama-blue-dark) 100%);
+    border: none;
+    color: var(--wikrama-white);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-wikrama:hover {
+    background: linear-gradient(135deg, var(--wikrama-blue-dark) 0%, var(--wikrama-blue) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+    color: var(--wikrama-white);
+}
+
+.btn-wikrama:active {
+    transform: translateY(0);
+}
+
+.btn-wikrama::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-wikrama:hover::before {
+    left: 100%;
+}
+
+/* Form Check Styling */
+.form-check-input:checked {
+    background-color: var(--wikrama-blue);
+    border-color: var(--wikrama-blue);
+}
+
+.form-check-input:focus {
+    border-color: var(--wikrama-blue);
+    box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.25);
+}
+
+/* Alert Styling */
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--wikrama-blue-light);
+    color: var(--wikrama-blue);
+    border-radius: 10px;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon i {
+    font-size: 4rem;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .login-container {
+        background: var(--wikrama-white);
+    }
+    
+    .right-side {
+        min-height: 100vh;
+    }
+    
+    .login-form-container {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .login-form-container {
+        padding: 1rem;
+    }
+    
+    .left-side {
+        display: none !important;
+    }
+}
+
+/* Loading Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Hover Effects */
+.input-group:hover .input-group-text {
+    background: var(--wikrama-blue-light);
+    color: var(--wikrama-white);
+    transition: all 0.3s ease;
+}
+
+.input-group:hover .form-control {
+    border-color: var(--wikrama-blue-light);
+}
+
+/* Focus Within Effect */
+.input-group:focus-within .input-group-text {
+    background: var(--wikrama-blue);
+    color: var(--wikrama-white);
+    border-color: var(--wikrama-blue);
+}
+
+.input-group:focus-within .form-control {
+    border-color: var(--wikrama-blue);
+}
