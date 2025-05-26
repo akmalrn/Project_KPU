@@ -10,6 +10,12 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/wikrama/favicon.ico') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/wikrama/apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('assets/images/wikrama/site.webmanifest') }}">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- Fonts and icons -->
     <script src="{{ asset('backend/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -52,7 +58,7 @@
                     <a href="{{ route('dashboard.admin') }}" class="logo">
                         <img src="{{ asset('assets/images/wikrama.png') }}" alt="navbar brand" class="navbar-brand"
                             height="40" />
-                        <p class="p-3 fs-5 mt-3 text-white">Wikrama 1 Garut</p>
+                        <p class="p-3 fs-5 mt-3 text-white text-logo">Wikrama 1 Garut</p>
                     </a>
                     <div class="nav-toggle">
                         <button class="btn btn-toggle toggle-sidebar">

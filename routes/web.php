@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/gate-admin', [App\Http\Controllers\Backend\AuthController::class, 'halamanLogin'])->name('halaman.login.admin');
 Route::post('/login-admin', [App\Http\Controllers\Backend\AuthController::class, 'login'])->name('login.admin');
-Route::post('/logout-admin', [App\Http\Controllers\Backend\AuthController::class, 'logout'])->name('logout');
+Route::get('/logout-admin', [App\Http\Controllers\Backend\AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard-admin', [App\Http\Controllers\Backend\AdminController::class, 'index'])->name('dashboard.admin');
@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/get-indikator/{kategori_indikator_id}', [App\Http\Controllers\Backend\IndikatorController::class, 'getIndikatorByKategori']);
     Route::get('/get-poin/{id}', [App\Http\Controllers\Backend\IndikatorController::class, 'getPoin']);
     Route::get('/prestasi/pdf', [App\Http\Controllers\Backend\PrestasiController::class, 'downloadPdfAll'])->name('prestasi.pdf.all');
-      Route::get('/prestasi/pdf/{id_siswa}', [App\Http\Controllers\Backend\PrestasiController::class, 'downloadPdf'])->name('prestasi.pdf');
+      Route::get('/prestasi/pdf/{siswa_id}', [App\Http\Controllers\Backend\PrestasiController::class, 'downloadPdf'])->name('prestasi.pdf');
     Route::get('/get-jam-by-kategori', [App\Http\Controllers\Backend\PrestasiController::class, 'getJamByKategori']);
     Route::delete('/prestasi/reset/unggulan', [App\Http\Controllers\Backend\PrestasiController::class, 'resetUnggulan'])->name('prestasi.reset.unggulan');
     Route::delete('/prestasi/reset/reguler', [App\Http\Controllers\Backend\PrestasiController::class, 'resetReguler'])->name('prestasi.reset.reguler');

@@ -16,15 +16,15 @@ class DatabaseSiswaSeeder extends Seeder
     {
         Siswa::Create([
             'id' => '12200765',
-            'nama' => 'Siswa 1',
-            'kelas' => 'XII PPLG',
+            'nama' => 'Sandy TWS',
+            'kelas' => 'XII TJKT',
             'tipe' => 'reguler',
             'password' => Hash::make('123')
         ]);
 
         Siswa::Create([
             'id' => '12200766',
-            'nama' => 'Siswa 1',
+            'nama' => 'Rizen',
             'kelas' => 'XII PPLG',
             'tipe' => 'reguler',
             'password' => Hash::make('123')
@@ -32,9 +32,33 @@ class DatabaseSiswaSeeder extends Seeder
 
         Siswa::Create([
             'id' => '12200767',
-            'nama' => 'Siswa 1',
-            'kelas' => 'XII PPLG',
+            'nama' => 'Putih Bolos',
+            'kelas' => 'XII TJKT',
             'tipe' => 'reguler',
+            'password' => Hash::make('123')
+        ]);
+
+          Siswa::Create([
+            'id' => '12200768',
+            'nama' => 'Akmal RN',
+            'kelas' => 'XII PPLG',
+            'tipe' => 'unggulan',
+            'password' => Hash::make('123')
+        ]);
+
+          Siswa::Create([
+            'id' => '12200769',
+            'nama' => 'Makmal',
+            'kelas' => 'XII PPLG',
+            'tipe' => 'unggulan',
+            'password' => Hash::make('123')
+        ]);
+
+          Siswa::Create([
+            'id' => '12200770',
+            'nama' => 'Amri',
+            'kelas' => 'XII PPLG',
+            'tipe' => 'unggulan',
             'password' => Hash::make('123')
         ]);
     }

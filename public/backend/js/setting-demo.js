@@ -131,7 +131,6 @@ $(document).ready(function () {
     $(".changeTopBarColor[data-color='" + topBarColor + "']").addClass("selected");
   }
 
-  // Sidebar
   var sideBarColor = localStorage.getItem("sideBarColor");
   if (sideBarColor) {
     $(".sidebar").attr("data-background-color", sideBarColor);
@@ -147,14 +146,49 @@ function updateTopbarTextColor() {
   if (topBarColor === "dark" || topBarColor === "dark2") {
     $(".dynamic-text").css("color", "#ffffff");
   } else {
-    $(".dynamic-text").css("color", "#000000"); 
+    $(".dynamic-text").css("color", "#000000");
   }
 }
 
 $(document).ready(function () {
-  updateTopbarTextColor(); 
+  updateTopbarTextColor();
 });
 
 $(".changeTopBarColor").on("click", function () {
   updateTopbarTextColor();
+});
+
+document.querySelectorAll('.changeLogoHeaderColor').forEach(button => {
+  button.addEventListener('click', function () {
+    const color = this.getAttribute('data-color');
+    const textElement = document.getElementById('headerText');
+
+    if (color === 'white') {
+      textElement.classList.remove('text-white');
+      textElement.classList.add('text-dark');
+    } else {
+      textElement.classList.remove('text-dark');
+      textElement.classList.add('text-white');
+    }
+  });
+});
+
+function updateLogoTextColor() {
+  var bgColor = $(".logo-header").attr("data-background-color");
+
+  if (bgColor === "white") {
+    $(".text-logo").removeClass("text-white").addClass("text-dark");
+  } else {
+    $(".text-logo").removeClass("text-dark").addClass("text-white");
+  }
+}
+
+$(document).ready(function () {
+  updateLogoTextColor();
+});
+
+$(".changeLogoHeaderColor").on("click", function () {
+  var selectedColor = $(this).data("color");
+  $(".logo-header").attr("data-background-color", selectedColor);
+  updateLogoTextColor();
 });

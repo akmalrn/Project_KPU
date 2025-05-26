@@ -28,18 +28,18 @@
                                 @csrf
                                 <div class="row mb-3">
                                     <div class="col-md-6">
-                                        <label for="id_siswa" class="form-label">Nama Siswa</label>
-                                        <select name="id_siswa" id="id_siswa"
-                                            class="form-control @error('id_siswa') is-invalid @enderror" required>
+                                        <label for="siswa_id" class="form-label">Nama Siswa</label>
+                                        <select name="siswa_id" id="siswa_id"
+                                            class="form-control @error('siswa_id') is-invalid @enderror" required>
                                             <option value="">-- Pilih Siswa --</option>
                                             @foreach ($siswa as $s)
                                                 <option value="{{ $s->id }}" data-tipe="{{ $s->tipe }}"
-                                                    {{ old('id_siswa') == $s->id ? 'selected' : '' }}>
+                                                    {{ old('siswa_id') == $s->id ? 'selected' : '' }}>
                                                     {{ $s->nama }}
                                                 </option>
                                             @endforeach
                                         </select>
-                                        @error('id_siswa')
+                                        @error('siswa_id')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                         @enderror
                                     </div>
@@ -115,8 +115,8 @@
     <script>
         $(document).ready(function() {
 
-            $('#id_siswa').on('change', function() {
-                let tipe = $('#id_siswa option:selected').data('tipe');
+            $('#siswa_id').on('change', function() {
+                let tipe = $('#siswa_id option:selected').data('tipe');
                 let kategoriSelect = $('#id_kategori_indikator');
                 let kategoriId = '';
 
