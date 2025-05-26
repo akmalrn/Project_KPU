@@ -120,8 +120,8 @@
                 let kategoriSelect = $('#id_kategori_indikator');
                 let kategoriId = '';
 
-                if (tipe === 'Unggulan') {
-                    kategoriId = kategoriSelect.find('option[data-nama="Qiyamullail"]').val();
+                if (tipe === 'unggulan') {
+                    kategoriId = kategoriSelect.find('option[data-nama="Qiyamulail"]').val();
                 } else if (tipe === 'reguler') {
                     kategoriId = kategoriSelect.find('option[data-nama="GDS"]').val();
                 }
