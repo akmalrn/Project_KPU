@@ -7,8 +7,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .table-hover tbody tr:hover {
@@ -33,7 +40,7 @@
     <div class="container fade-in">
         <div class="page-inner">
             <div class="page-header">
-                <h3 class="fw-bold mb-3">📦 Data Kategori</h3>
+                <h3 class="fw-bold mb-3"><i class="fa fa-box"></i> Data Kategori</h3>
                 <ul class="breadcrumbs mb-3">
                     <li class="nav-home"><a href="#"><i class="icon-home"></i></a></li>
                     <li class="separator"><i class="icon-arrow-right"></i></li>
@@ -47,7 +54,7 @@
                 <div class="col-md-12 fade-in">
                     <div class="card shadow-sm">
                         <div class="card-header bg-light d-flex justify-content-between align-items-center">
-                            <h4 class="card-title fw-semibold">📂 Tambah Kategori</h4>
+                            <h4 class="card-title fw-semibold"><i class="fa fa-folder-open"></i> Tambah Kategori</h4>
                             <button class="btn btn-primary btn-round"
                                 onclick="window.location.href='{{ route('kategori.create') }}'">
                                 <i class="fa fa-plus me-1"></i> Tambah Kategori
@@ -69,16 +76,20 @@
                                                 <td>{{ $kategori->nama }}</td>
                                                 <td>
                                                     <div class="form-button-action d-flex">
-                                                        <form action="{{ route('kategori.edit', $kategori->id) }}" method="GET">
+                                                        <form action="{{ route('kategori.edit', $kategori->id) }}"
+                                                            method="GET" class="me-2">
                                                             @csrf
-                                                            <button type="submit" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit Kategori">
+                                                            <button type="submit" class="btn btn-sm btn-outline-primary"
+                                                                data-bs-toggle="tooltip" title="Edit Kategori">
                                                                 <i class="fa fa-edit"></i>
                                                             </button>
                                                         </form>
-                                                        <form action="{{ route('kategori.destroy', $kategori->id) }}" method="POST" id="delete-form-{{ $kategori->id }}">
+                                                        <form action="{{ route('kategori.destroy', $kategori->id) }}"
+                                                            method="POST" id="delete-form-{{ $kategori->id }}">
                                                             @csrf
                                                             @method('DELETE')
-                                                            <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" title="Hapus Kategori"
+                                                            <button type="button" class="btn btn-sm btn-outline-danger"
+                                                                data-bs-toggle="tooltip" title="Hapus Kategori"
                                                                 onclick="confirmDelete({{ $kategori->id }})">
                                                                 <i class="fa fa-trash"></i>
                                                             </button>
@@ -89,7 +100,7 @@
                                         @endforeach
                                     </tbody>
                                 </table>
-                                @if($kategoriIndikators->isEmpty())
+                                @if ($kategoriIndikators->isEmpty())
                                     <div class="text-center text-muted mt-3">Belum ada kategori ditambahkan 😅</div>
                                 @endif
                             </div>
@@ -102,9 +113,9 @@
 
     <!-- Tooltip Bootstrap -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            tooltipTriggerList.map(function (tooltipTriggerEl) {
+            tooltipTriggerList.map(function(tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
             })
         })
