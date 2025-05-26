@@ -58,7 +58,7 @@
                     <a href="{{ route('dashboard.admin') }}" class="logo">
                         <img src="{{ asset('assets/images/wikrama.png') }}" alt="navbar brand" class="navbar-brand"
                             height="40" />
-                        <p class="p-3 fs-5 mt-3 text-white">Wikrama 1 Garut</p>
+                        <p class="p-3 fs-5 mt-3 text-white text-logo">Wikrama 1 Garut</p>
                     </a>
                     <div class="nav-toggle">
                         <button class="btn btn-toggle toggle-sidebar">
