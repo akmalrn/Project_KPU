@@ -29,18 +29,18 @@
                                 @method('PUT')
                                 <div class="row">
                                     <div class="col">
-                                        <label for="id_siswa">Nama Siswa</label>
-                                        <select name="id_siswa" id="id_siswa"
-                                            class="form-control @error('id_siswa') is-invalid @enderror" required>
+                                        <label for="siswa_id">Nama Siswa</label>
+                                        <select name="siswa_id" id="siswa_id"
+                                            class="form-control @error('siswa_id') is-invalid @enderror" required>
                                             <option value="">Pilih Siswa</option>
                                             @foreach ($siswa as $item)
                                                 <option value="{{ $item->id }}"
-                                                    {{ old('id_siswa', $prestasi->id_siswa) == $item->id ? 'selected' : '' }}>
+                                                    {{ old('siswa_id', $prestasi->siswa_id) == $item->id ? 'selected' : '' }}>
                                                     {{ $item->nama }}
                                                 </option>
                                             @endforeach
                                         </select>
-                                        @error('id_siswa')
+                                        @error('siswa_id')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>

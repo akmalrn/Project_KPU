@@ -13,7 +13,7 @@ class KategoriIndikatorController extends Controller
 {
     public function index()
     {
-        $kategoriIndikators = KategoriIndikator::all(); 
+        $kategoriIndikators = KategoriIndikator::all();
         $SiswaTotal = Siswa::count();
         $KategoriTotal = KategoriIndikator::count();
         $IndikatorTotal = Indikator::count();
@@ -50,14 +50,20 @@ class KategoriIndikatorController extends Controller
         return view('backend.indikator.kategori.edit', compact('KategoriIndikator', 'SiswaTotal', 'KategoriTotal', 'IndikatorTotal', 'PrestasiTotal'));
     }
 
-    public function update(Request $request, KategoriIndikator $kategoriIndikator)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'nama' => 'required|string|max:255',
         ]);
 
-        $kategoriIndikator->update($request->all());
-        return redirect()->route('kategori.index')->with('success', 'Kategori Indikator berhasil diperbarui!');
+        $kategoriIndikator = KategoriIndikator::findOrFail($id);
+
+        $kategoriIndikator->update([
+            'nama' => $request->nama,
+        ]);
+
+        return redirect()->route('kategori.index')
+            ->with('success', 'Kategori Indikator berhasil diperbarui!');
     }
 
     public function destroy($id)
