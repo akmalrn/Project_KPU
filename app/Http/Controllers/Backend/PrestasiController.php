@@ -48,7 +48,7 @@ class PrestasiController extends Controller
         $request->validate([
             'siswa_id' => 'required',
             'tanggal' => 'required|date',
-            'jam' => 'required|numeric',
+            'jam' => 'required|string',
             'poin' => 'required|numeric',
         ]);
 
@@ -79,8 +79,8 @@ class PrestasiController extends Controller
         $request->validate([
             'siswa_id' => 'required',
             'tanggal' => 'required|date',
-            'jam' => 'required|numeric',
-            'periode' => 'required|string'
+            'jam' => 'required|string',
+            'poin' => 'required|numeric'
         ]);
         Prestasi::create([
             'siswa_id' => $request->siswa_id,

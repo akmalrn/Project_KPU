@@ -1,12 +1,6 @@
 @extends('backend.layouts.app')
 @section('title', 'Tambah Kategori Baru')
 @section('content')
-<<<<<<< HEAD
-    <div class="container">
-        <div class="page-inner">
-            <div class="page-header">
-                <h3 class="fw-bold mb-3">Tambah Kategori Baru</h3>
-=======
     <style>
         .fade-in {
             animation: fadeIn 0.5s ease-in-out;
@@ -79,7 +73,6 @@
         <div class="page-inner">
             <div class="page-header">
                 <h3 class="fw-bold mb-3">📝 Tambah Kategori Baru</h3>
->>>>>>> f4c0e7fbbbddb02ac3be01ef192f0dd2255ef847
                 <ul class="breadcrumbs mb-3">
                     <li class="nav-home">
                         <a href="{{ route('dashboard.admin') }}">
@@ -92,16 +85,6 @@
                     <li class="nav-item"><a href="#">Tambah Kategori</a></li>
                 </ul>
             </div>
-<<<<<<< HEAD
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Tambah Kategori Baru</h4>
-                        </div>
-                        <div class="card-body">
-                            <form action="{{ route('kategori.store') }}" method="POST">
-=======
 
             <div class="row">
                 <div class="col-md-8 mx-auto fade-in">
@@ -111,36 +94,21 @@
                         </div>
                         <div class="card-body">
                             <form action="{{ route('kategori.store') }}" method="POST" novalidate>
->>>>>>> f4c0e7fbbbddb02ac3be01ef192f0dd2255ef847
                                 @csrf
                                 <div class="row">
                                     <div class="col">
                                         <div class="form-group form-group-default">
-<<<<<<< HEAD
-                                            <label for="nama">Nama Kategori</label>
-                                            <input type="text" name="nama" id="nama"
-                                                class="form-control @error('nama') is-invalid @enderror"
-                                                placeholder="Masukkan nama kategori" required>
-=======
                                             <label for="nama" class="form-label">Nama Kategori</label>
                                             <input type="text" name="nama" id="nama"
                                                 class="form-control @error('nama') is-invalid @enderror"
                                                 placeholder="Masukkan nama kategori" required autofocus>
->>>>>>> f4c0e7fbbbddb02ac3be01ef192f0dd2255ef847
                                             @error('nama')
                                                 <span class="text-danger">{{ $message }}</span>
                                             @enderror
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="d-flex justify-content-end mt-4">
-<<<<<<< HEAD
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                    <a href="{{ route('kategori.index') }}" class="btn btn-secondary ms-2">Batal</a>
-                                </div>
-
-=======
                                     <button type="submit" class="btn btn-primary">
                                         <i class="fas fa-save me-1"></i> Simpan
                                     </button>
@@ -148,7 +116,6 @@
                                         <i class="fas fa-arrow-left me-1"></i> Batal
                                     </a>
                                 </div>
->>>>>>> f4c0e7fbbbddb02ac3be01ef192f0dd2255ef847
                             </form>
                         </div>
                     </div>

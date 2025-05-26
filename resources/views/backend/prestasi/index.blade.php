@@ -84,7 +84,7 @@
 
                         <div class="card-body">
                             <div class="accordion" id="accordionPrestasi">
-                                @foreach ($prestasis->groupBy('id_siswa') as $siswaId => $prestasiGroup)
+                                @foreach ($prestasis->groupBy('siswa_id') as $siswaId => $prestasiGroup)
                                     <div class="card mb-2">
                                         <div class="card-header" id="heading-{{ $siswaId }}">
                                             <h5 class="mb-0 d-flex justify-content-between align-items-center">
@@ -102,7 +102,7 @@
                                             aria-labelledby="heading-{{ $siswaId }}"
                                             data-bs-parent="#accordionPrestasi">
                                             <div class="card-body table-responsive">
-                                                <a href="{{ route('prestasi.pdf', ['id_siswa' => $siswaId]) }}"
+                                                <a href="{{ route('prestasi.pdf', ['siswa_id' => $siswaId]) }}"
                                                     class="btn btn-success btn-sm">
                                                     <i class="fa fa-download me-1"></i> Download PDF
                                                 </a>
