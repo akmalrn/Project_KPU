@@ -9,7 +9,7 @@
 </ul>
 
 <p>
-  Setiap indikator memiliki bobot poin tertentu dan diklasifikasikan berdasarkan <em>grade</em>. Peserta didik dengan poin tertinggi setiap <strong>minggu atau bulan</strong> akan tercatat sebagai peserta didik <strong>berprestasi</strong>. Capaian prestasi ini dapat diunduh secara otomatis dalam bentuk <strong>PDF</strong>, baik mingguan maupun bulanan.
+  Setiap indikator memiliki bobot poin tertentu dan diklasifikasikan berdasarkan <em>grade</em>. Peserta didik dengan poin tertinggi setiap <strong>minggu atau bulan</strong> akan tercatat sebagai peserta didik <strong>berprestasi</strong>. Capaian prestasi ini dapat diunduh secara otomatis dalam bentuk <strong>PDF</strong>, Diunduh keseluruhan dari poin.
 </p>
 
 <h2>👥 Anggota Kelompok KPU</h2>
