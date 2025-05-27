@@ -1,13 +1,20 @@
-📝 Deskripsi Proyek
-Proyek ini bertujuan untuk mencatat dan memantau prestasi peserta didik, baik yang tinggal di asrama maupun yang mengikuti kelas reguler. Penilaian dilakukan berdasarkan indikator kehadiran:
+<h2>📝 Deskripsi Proyek</h2>
+<p>
+  Proyek ini bertujuan untuk mencatat dan memantau <strong>prestasi peserta didik</strong>, baik yang tinggal di <strong>asrama</strong> maupun yang mengikuti <strong>kelas reguler</strong>. Penilaian dilakukan berdasarkan indikator kehadiran:
+</p>
 
-🕌 Peserta didik asrama: kehadiran qiyamullail
+<ul>
+  <li>🕌 <strong>Peserta didik asrama</strong>: kehadiran <em>qiyamullail</em></li>
+  <li>⏰ <strong>Peserta didik reguler</strong>: kehadiran GDS sebelum pukul 07.00 WIB</li>
+</ul>
 
-⏰ Peserta didik reguler: kehadiran GDS sebelum pukul 07.00 WIB
+<p>
+  Setiap indikator memiliki bobot poin tertentu dan diklasifikasikan berdasarkan <em>grade</em>. Peserta didik dengan poin tertinggi setiap <strong>minggu atau bulan</strong> akan tercatat sebagai peserta didik <strong>berprestasi</strong>. Capaian prestasi ini dapat diunduh secara otomatis dalam bentuk <strong>PDF</strong>, baik mingguan maupun bulanan.
+</p>
 
-Setiap indikator memiliki bobot poin tertentu dan diklasifikasikan berdasarkan grade. Peserta didik dengan poin tertinggi setiap minggu atau bulan akan tercatat sebagai peserta didik berprestasi. Capaian prestasi ini dapat diunduh secara otomatis dalam bentuk PDF, baik mingguan maupun bulanan.
-
-👥 Anggota Kelompok KPU
-Akmal Rahmattullah Nugraha — Project Manager
-
-Muhamad Akmal Rahmatullah — Anggota
+<h2>👥 Anggota Kelompok KPU</h2>
+<ul>
+  <li><strong>Akmal Rahmattullah Nugraha</strong> — <em>Project Manager</em></li>
+  <li><strong>Muhamad Akmal Rahmatullah</strong> — <em>Anggota</em></li>
+  <li><strong>Muhammad Raihan Amri</strong> — <em>Anggota</em></li>
+</ul>
